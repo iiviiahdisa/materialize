@@ -48,11 +48,11 @@
       return;
     }
     var time = 0;
-    element.find('li').velocity(
+    element.children('li').velocity(
         { translateX: "-100px"},
         { duration: 0 });
 
-    element.find('li').each(function() {
+    element.children('li').each(function() {
       $(this).velocity(
         { opacity: "1", translateX: "0"},
         { duration: 800, delay: time, easing: [60, 10] });
